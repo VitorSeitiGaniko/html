@@ -1,0 +1,54 @@
+<html>
+<head>
+
+<script>
+function slide1(){
+document.getElementById('id').src="http://files.cod3r.com.br/curso-web/imagem1.jpg";
+setTimeout("slide2()", 2000)
+}
+  
+function slide2(){
+document.getElementById('id').src="http://files.cod3r.com.br/curso-web/imagem3.png";
+setTimeout("slide1()", 2000)
+}
+  
+</script>
+
+<body onLoad="slide1()">
+<img id="id" class="teste">
+</body>
+</html>
+      
+
+
+
+
+
+
+
+<p>
+    <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg"
+    alt="Muro da cidade"
+    width="513"
+    height="342"
+    title="Muro da cidade por Tarso"
+    >
+</p>
+
+<style>
+    .teste{
+        width: 600px;
+        height: 400px;
+    }
+    .circular{
+        width: 513px;
+        background-color: gray;
+    }
+</style>
+
+
+<p class="circular">
+    <img src="http://files.cod3r.com.br/curso-web/imagem3.png" 
+    alt="Rio de Janeiro">
+</p>
+</html> 
